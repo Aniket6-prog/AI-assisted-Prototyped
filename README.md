@@ -1,20 +1,12 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+I have successfully built the AI Prototyper application, using a modern full-stack approach.
 
-# Run and deploy your AI Studio app
+Here is an overview of the process and architecture used to build this:
+Full-Stack Architecture setup: Injected an Express server (server.ts) alongside the standard Vite frontend. This ensures the GEMINI_API_KEY remains securely hidden on the server, while still providing rapid HMR locally and optimized static builds for production.
 
-This contains everything you need to run your app locally.
+Gemini AI Integration: Created a dedicated /api/generate route using @google/genai. The endpoint submits the raw idea via a prompt engineered to solicit a structured JSON schema, extracting specific elements like target audience, problem statements, and application layout.
 
-View your app in AI Studio: https://ai.studio/apps/9ebc1640-9bbd-4ac8-a173-13b0167ce68a
+Minimalist Interface: Replaced the default React component with a clean, single-view app featuring a generous, centered search bar.
 
-## Run Locally
+Aesthetic Pairings: Configured Tailwind CSS utility classes and lucide-react icons to create a crisp, high-contrast visual hierarchy (soft neutral backgrounds paired with stark, charcoal-toned text).
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Purposeful Animations: Encapsulated state updates with motion/react to provide smooth, cascading fade-in entrances when the AI finishes structuring the prototype layout.
