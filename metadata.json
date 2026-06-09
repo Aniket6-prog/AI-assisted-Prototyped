@@ -1,0 +1,6 @@
+{
+  "name": "AI Prototyper",
+  "description": "An AI-assisted tool to quickly prototype application ideas using Google Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
